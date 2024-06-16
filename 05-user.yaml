@@ -50,7 +50,7 @@
       ansible.builtin.package:
         name: mongodb-org-shell
         state: present
-    - name: get catagories count
+    - name: get users count
       ansible.builtin.command: mongo --host mongodb.bhargavdevops.online --quiet --eval 'db = db.getSiblingDB("users"); db.users.count()'
       register: user_count
     - name: print the count
