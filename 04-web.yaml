@@ -11,7 +11,7 @@
         path: /usr/share/nginx/html
         state: absent
     - name: creating Html directory
-      ansible. builtin.file:
+      ansible.builtin.file:
         path: /usr/share/nginx/html
         state: directory
     - name: downloading the application zip
